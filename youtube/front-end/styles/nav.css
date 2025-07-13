@@ -1,0 +1,43 @@
+header{
+    height: 40%;
+    width: 100%;
+    align-items: center;
+}
+
+header > div {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    width: 60%;    
+    justify-content: center;   
+}
+
+#nav-search{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.home{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.nav-icon{
+    font-size: 20px;
+    padding: 5px;
+    height: 5rm;
+    width: 5rem;
+}
+
+
+
+

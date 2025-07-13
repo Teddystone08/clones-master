@@ -4,83 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheelink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="./styles/gen.css">
+    <link rel="stylesheet" href="./styles/nav.css">   
+    <link rel="stylesheet" href="./styles/side.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-shims.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v5-shims.min.css">
 
-
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheelink rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <div id="home">
-                <i class="fa fa-bars 900 nav-icon"></i>
-                <i class="fa fa-youtube nav-icon">Youtube</i>
+    <header>
+        <div class ="home">
+                <p id="menu">
+                    <i class="fa fa-bars nav-icon"></i>
+                </p>
+                <p id="logo">
+                    <i class="fa fa-youtube-play nav-icon"></i>
+                    <span>Youtube</span>
+                </p>
+               
+            <div class ="search">
+                <p id="search-bar">
+                    <input type="text" id ="nav-search">
+                    <span>
+                        <i class="fa fa-search"></i>
+                    </span>
+                </p>
             </div>
-            <div id="search">
-                <input type="text" class="nav-search">
-                <i class="fa fa-search nav-icon"></i>
-            </div>
+
             <div id="alert">
-                <i class="fa fa-video-camera nav-icon ">Create</i>
+                <i class="fa fa-video-camera nav-icon "></i>
+                <span>Create</span>
             </div>
             <div id="user">
                 <i class="fa fa-bell nav-icon"></i>
                 <img src=""></img>
             </div>
+        </div>
+
         </header>
 
         <aside>
-            <div>
-                <i class="fa fa-home nav-icon">Home</i>
-                <i class="fa fa-short nav-icon">Short</i>
-                <i class="fa fa-subscriptions nav-icon">Subscriptions</i>
+            <div class="home_list">
+                <ul>
+                    <li><i class="fa fa-home"></i>
+                        <span>Home</span></li>
+                    <li><img src="http://www.w3.org/2000/svg"><span>Short</span></li>  
+                    <li><img src="http://www.w3.org/2000/svg"><span>Subscriptions</span></li>
+                </ul>
             </div>
-            <div>
-                <h3>You</h3>
-                <i class="fa fa-history nav-icon">History</i>
-                <i class="fa fa-playlist nav-icon">Playlists</i>
-                <i class="fa fa-library nav-icon">Your videos</i>
-                <i class="fa fa-thumbs-up nav-icon">Watch later</i>
-                <i class="fa fa-thumbs-up nav-icon">Like videos</i>
-                <i class="fa fa-thumbs-up nav-icon">Downloads</i>
+            <div class="you">
+                <h3>You > </h3>
+                <ul>
+                    <li><i class="fa fa-video"></i>
+                        <span>Library</span></li>
+                    <li><i class="fa fa-clock"></i>
+                        <span>History</span></li>
+                    <li><i class="fa fa-thumbs-up"></i>
+                        <span>Liked videos</span></li>
+                    <li><i class="fa fa-play-circle"></i>
+                        <span>Watch later</span></li>   
+                    <li><i class="fa fa-list"></i>
+                        <span>Playlists</span></li>
+                    <li><i class="fa fa-download"></i>
+                        <span>Download</span></li>
 
+                </ul>
             </div>
-            <div>
-                <h3>Subscription</h3>
-                <i class="fa fa-user nav-icon">JoyNews</i>
-                <i class="fa fa-freeCodeCamp.com nav-icon">freeCode.com</i>
-                <i class="fa fa-user nav-iconi">Nollywood</i>
-                <i class="fa fa-user nav-icon">Net Nija</i>
-
+            <div class="expore">
+                <h3>Explore </h3>
+                <ul>
+                    <li><i class="fa fa-fire"></i>
+                        <span>Trending</span></li>
+                    <li><i class="fa fa-gamepad"></i>
+                        <span>Gaming</span></li>
+                    <li><i class="fa fa-music"></i>
+                        <span>Music</span></li>
+                    <li><i class="fa fa-football"></i>
+                        <span>Sport</span></li>
+                    <li><i class="fa fa-bookmark"></i>
+                        <span>Bookmarks</span></li>
+                </ul>
             </div>
-            <div class="explore">
-                <h3>Explore</h3>
-                <i class="fa fa-fire nav-icon"></i>
-                <i class="fa fa-music nav-icon"></i>
-                <i class="fa fa-games nav-icon"></i>
-                <i class="fa fa-movie nav-icon"></i>
-            </div>
-            <div class="more">
-                <h3>More</h3>
-                <i class="fa fa-newspaper nav-icon"></i>
-                <i class="fa fa-shopping-cart nav-icon"></i>
-                <i class="fa fa-bookmark nav-icon"></i>
-                <i class="fa fa-flag nav-icon"></i>
+            <div class="maintence">
+                <ul>
+                    <li><i class="fa fa-cog"></i>
+                        <span>Settings</span></li>
+                    <li><i class="fa fa-flag"></i>
+                        <span>Help</span></li>
+                    <li><i class="fa fa-info-circle"></i>
+                        <span>About</span></li>
+                    <li><i class="fa fa-question-circle"></i>
+                        <span>send Feedback</span></li>
+                        
+                </ul>
             </div>
         </aside>
+
         <main>
             <img  class="thumbnail" src="/youtube/front-end/asset/hq720.webp" alt="pix" srcset="front">
             <img  class="thumbnail" src="/youtube/front-end/asset/hq720(1).webp" alt="pix" srcset="front">
             <img  class="thumbnail" src="/youtube/front-end/asset/hq720(2).webp" alt="pix" srcset="front">
         </main>
         <footer></footer>
-    </div>
+    
 </body>
 </html>
